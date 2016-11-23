@@ -1,0 +1,66 @@
+.about{
+		background-color: lighten(black,20%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow: hidden;
+		.info{
+			width: 100%;
+			height: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			.text{
+				width: 50%;
+				color: white;
+				font-family: "Raleway", "Open Sans", sans-serif;
+				font-size: 1.2em;
+				blockquote{
+					padding-left: 40px;
+					border-left: 4px solid $fDRed;
+					background-color: $fDBlack;
+				}
+			}
+			#me{
+				width: 250px;
+				height: 250px;
+				margin-left: 100px;
+				border-radius: 50%;
+				border: 5px solid white;
+				overflow: hidden;
+				img{
+					width: 325px;
+					height: 250px;
+					margin-left: -20px;
+				}
+			}
+		}
+		.badges{
+			width: 100%;
+			height: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			.badge{
+				width: 200px;
+				height: 200px;
+				background-color: $fBlack;
+				color: white;
+				font-family: "Raleway";
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid white;
+				overflow: hidden;
+				box-shadow: 0px 8px 5px darken(lighten(black,20%),10%);
+				display: flex;
+				opacity: 0;
+				.badgeIco{
+					font-size: 5em;
+				}
+				span{
+					font-size: 1.5em;
+				}
+			}
+		}
+	}
